@@ -1,0 +1,245 @@
+/* stylesheet for (lt IE 9)&(!IEMobile) */
+/* main css, inc reset, loads first; overwrite with this */
+
+/* ignore breakpoints, lt9 doesn't ignore them */
+
+
+/*NB to test on IE, need to comment out the conditional comment because IE11 doesn't see it!*/
+
+/* test
+body {
+	background-color: red; 
+}*/
+
+
+.container {
+	min-width: 36em;
+}
+
+h1 {
+   position: relative;
+   font-size: 3em;
+   top: 55%;
+}
+
+h1 a {
+	color: #f36f21;
+}
+
+h2 {
+	margin: 0 2%;
+}
+
+
+#header {
+	margin-top: 0;
+}
+#header .nav li {
+	font-size: 1.2em;
+}
+.textcontent {
+	padding: 0.5em 0;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.textcontent .contentblock {
+	float: left;
+	width: 45%;
+	margin: 1em 2% 0 2%;
+}
+.mainpage .textcontent .contentblock {
+	width: 22.5%;
+	margin-left: 0;
+}
+
+.mainpage .textcontent p:first-child, .mainpage .textcontent .contentblock:nth-child(1) { 
+	margin-left: 2%;
+}
+
+div.textcontent div:nth-child(3) {  
+	clear: none;
+}
+
+
+p.mainpara {  
+  width: 95.5%;
+  max-width: 800px;
+  font-size: 1em;
+  margin: 1em 2% 0 2%;
+}
+
+
+#logo {
+	position: relative;
+	border-bottom-width: 2px;
+}
+
+#logo img {
+	width: auto;
+	height: auto;
+	bottom: -2px;
+}
+
+#logo .container {
+	height: 85px;
+	position: relative;
+}
+
+
+
+#header .social {
+    right: 0.8em;
+}
+
+#togglemenuicon {
+	display: none;
+}
+
+div#header .container ul.nav { 
+	display: block;
+	float: left;
+	position: absolute; 
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 1em 0 1em 0;
+	background-color: transparent;
+	top: auto;
+	left: 1em;
+	z-index: 0;
+	border-width: 0;
+}
+
+
+#header .nav > li > a { 
+	display: inline;
+	height: 2.8em;
+	padding-bottom: 1.5em;
+}
+
+div#header ul.nav > li {
+	position: relative;
+	float: left;
+	width: 19.3%;
+	padding: 0;
+	clear: none;
+}
+
+/* ie7 only */
+div#header .container ul.nav ul li {
+	float: left;
+	display: inline-block;
+	clear: both;
+}
+
+
+/* second level dropdown menu */
+
+div#header ul.nav li ul, 
+div#header ul.nav span {
+	display: none;
+}
+
+div#header ul.nav ul:hover,
+div#header ul.nav a:hover + ul, 
+div#header ul.nav a:hover + ul span, 
+div#header ul.nav ul:hover span {
+	display: block;
+}
+
+div#header ul.nav ul {
+	position: absolute;
+	left: 0;
+	top: 2.5em;
+	float: left;
+	padding: 0.5em 1em;
+	width: 150%;
+	background-color: #fff;
+	opacity: 0.98;
+	filter: alpha(opacity=98);
+	border: 1px solid #ccc;
+}
+
+#header #dropdownmenutriangle {
+	display: block;
+    position: absolute;
+    top: -1.4em;
+    width: 2.6em;
+    height: 1em;
+	z-index: 20;
+}
+
+#header #noncanvasdropdownimg {
+	display: block;
+	position: absolute;
+	top: -1.25em;
+	width: 30px;
+	height: 13px;
+	z-index: 20;
+	background-image: url("graphics/menuarrow30x13.png");
+}
+
+div#header .container ul.nav a:hover, div#header .container ul.nav a:active, div#header .container ul.nav .current {
+	color: #449999;
+}
+
+
+
+#footer {
+	border-top-width: 2px;
+}
+
+
+#navfooter img {
+	width: auto;
+	top: auto;
+}
+
+
+#navfooter .nav  {
+	width: 70%;
+}
+
+#navfooter li {
+	clear: none;
+}
+
+#navfooter .nav a  {
+    color: #fff; /*ie7 doesn't like inherit*/
+}
+
+/*, #navfooter .nav a:hover, #navfooter .nav a:focus, #navfooter .nav a:active*/
+
+/*for when the footer menu isn't complete*/
+#navfooter li.tempclear {
+    clear: both;
+}
+
+
+/*slideshow*/
+
+
+
+/* fixed to one image until I fix js fade function for ie9, then see how it works in ie8/7 */
+
+#slideshow .caption {
+	font-size: 1.5em;
+}
+
+.slideshowimage {
+	display: none;
+}
+
+#slideshow > .green + .green {
+	display: block;
+}
+
+#slideshow .ontint {
+	background: #fff; /*filter opacity won't work purely on bg, also on text*/
+}
+
+
+
+

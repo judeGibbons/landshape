@@ -1,0 +1,32 @@
+/* stylesheet for (lt IE 8) */
+
+
+div#header ul.nav li {
+	padding: 0 0 20px 0; /*this isn't working, only getting 1.5em on a tag
+	
+	li 0px x
+	#header .nav li - 4px x
+	div#header ul.nav > li 0px <-- this
+	
+	*/
+}
+
+div#header ul.nav li li { /*<-- this only if child selector doesn't work */
+	padding: 0;
+}
+
+div#header .container ul.nav ul li {
+	float: left;
+	display: inline-block;
+	clear: both;
+}
+
+/*for when the footer menu isn't complete*/
+#navfooter li.tempclear {
+    width: 50%;
+}
+
+#navfooter li.tempclear + li {
+    clear: both;
+    width: 50%; 
+}

@@ -1,0 +1,910 @@
+/*---------->>> RESET <<<-----------*/
+
+/* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+    html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+    margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+    body{line-height:1}
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+    nav ul{list-style:none}
+    blockquote,q{quotes:none}
+    blockquote:before,blockquote:after,q:before,q:after{content:none}
+    a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+    ins{background-color:#ff9;color:#000;text-decoration:none}
+    mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+    del{text-decoration:line-through}
+    abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+    table{border-collapse:collapse;border-spacing:0}
+    hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+    input,select{vertical-align:middle}
+
+/*------->>> END OF RESET <<<--------*/
+
+/*-----------------------------------*/
+/*---------->>> GLOBAL <<<-----------*/
+/*-----------------------------------*/
+
+
+
+/*
+
+NB need stylesheet for IE - no media queries, no 3rd child
+
+
+orange #f36f21
+green #10994a
+
+d green #5d5600
+tried footer green 559b48, less saturated was for links
+
+/duo
+l olive green #736b1b 
+d olive green 5d5600
+teal #2d675d
+teal tint #449999
+brown 733510
+d orange ae3300
+
+*/
+
+/*-----------------------------------*/
+/*----------->>> TYPE <<<------------*/
+/*-----------------------------------*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+/* @import url("//hello.myfonts.net/count/2538be");*/
+
+
+html {
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",
+    Verdana,Tahoma,Helvetica,sans-serif;
+}
+
+
+h1 {
+    font-family: Helvetica,sans-serif;
+    color: #f36f21;
+	font-weight: normal;
+	font-size: 1.5em; /*1.875em;*/
+	line-height: 1;
+	display: inline-block;
+}
+
+#header h1 a, #header h1 a:link, #header h1 a:focus, #header h1 a:hover, #header h1 a:visited {
+	background-color: transparent;
+	font-size: inherit;
+	color: inherit;
+	border-bottom: none;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1.25;
+	color: #2d675d;
+}
+
+
+h3 {
+	font-size: 1em;
+	line-height: 1.25;
+	margin-top: 1.3125em;
+}
+
+
+.contentblock {
+	margin-top: 1.3125em;
+}
+
+
+h4 {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.25;
+	margin-top: 1.25em;
+}
+
+p, ul, ol {
+	font-size: 0.8125em;
+	line-height: 1.53846154; /*= 20px when font is 13px, stops jiggling*/
+	margin-top: 0.6923em;
+	font-weight: 200; /*fixes incorrect bold on Android 2.3*/
+}
+
+/*mostly for headernav...*/
+ul ul, ol ol, ol ul, ul ol {
+	margin-top: 0;
+}
+
+p.blockquote {
+	padding: 0 2em 0 2em;
+}
+
+.contactdetails {
+	margin-top: 0.6923em;
+}
+
+.contactdetails p {
+	margin-top: 0;
+}
+
+
+#footer p {
+	font-size: 0.7em;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+
+
+#navfooter img {
+    bottom: 10px; /*was top 20px*/
+    position: absolute;
+    right: 0.8em;
+    width: 150px;
+}
+
+
+
+
+
+
+/*link colours*/
+
+a {
+    color: #2d675d;
+    text-decoration: none;
+    border-bottom: 1px dotted #2d675d;
+}
+
+/*a:visited {
+    color: #449999;
+    border-bottom: 1px dotted #449999;
+}*/
+
+a:hover, a:focus, a:active {
+    background-color: #ebf5f6;
+}
+
+.tags a:hover, .tags a:focus, .tags a:active {
+    background-color: #ffead5;
+}
+
+.nav a, .nav a:hover, .nav a:focus, .nav a:active  {
+    border-bottom: 0px;
+    background-color: transparent;
+    color: inherit;
+}
+
+/* what about .nav a:visited */
+
+#navfooter .nav a.current, #navfooter .nav a:hover, #navfooter .nav a:focus {
+    color: #f36f21;
+}
+
+
+
+
+
+ol, ul {
+    list-style: circle outside;
+    padding-left: 1em;
+}
+
+li {
+    padding-left: 0.3em;
+}
+
+
+
+
+.em, .title {
+ font-style: italic;
+}
+ 
+.strong {
+ font-weight: bold;
+}
+
+.sup { 
+	font-size: 75%;
+	position: relative;
+	bottom: 0.4em;
+}
+
+.sub {
+	font-size: 75%;
+	position: relative;
+	bottom: -0.2em;
+}
+
+p.caption {
+	font-size: 0.6em;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+.nowrap {
+	 white-space: nowrap;
+}
+
+
+
+/*-----------------------------------*/
+/*---------->>> LAYOUT <<<-----------*/
+/*-----------------------------------*/
+
+
+#maincontent.mainpage {
+	margin-top: 0;
+	position: relative;
+    z-index: 1;
+}
+
+
+.container {
+	max-width: 960px; /*not 60em*/
+	padding: 0.8em;
+	margin: 0 auto;
+}
+
+#logo .container, #header .container, #maincontent .container {
+	padding-top: 0;
+}
+
+#header {
+	position: relative;
+	z-index: 10;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+#logo {
+	position: relative;
+	border-bottom: solid 1px #f36f21;
+}
+
+#logo img {
+	width: 150px;
+	height: 42px;
+	position: absolute;
+	z-index: 0;
+	float: left;
+	bottom: -1px;
+	right: 0.8em;
+}
+
+#header .social {
+    float: right;
+    position: absolute;
+    top: 0.8em;
+    right: 52px; /* make right: 0.8em; later*/
+}
+
+#header .social img {
+    margin-left: 10px;
+}
+
+#header .social a {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+h1	{
+	position: relative;
+	z-index: 10;
+}
+
+.textcontent {
+	background-color: #e6f8ec; /*orig #cac079 l olive; cfe5d8 better green*/
+	padding: 0.5em; /* c.0.90909091%; at 55ems wide */
+	clear: both;
+}
+
+
+
+.contentimage {
+	max-width: 408px;
+	width: 100%;
+}
+
+.contentimage img {
+	width: 100%;
+}
+
+.floatedcontentimage {
+	float: right;
+	width: 40%;
+	margin: 6px;
+}
+
+.floatedcontentimage img {
+	width: 100%;
+	max-width: 208px;
+}
+
+.contactdetails img {
+	float: none;
+	vertical-align: middle;
+}
+
+.contactdetails a {
+	border: 0;
+}
+
+.contactdetails .withgraphics {
+	line-height: 2.3em;
+}
+
+.contactdetails .linkedin {
+	display: inline-block;
+	width: 81px;
+	height: 20px;
+}
+
+#navfooter {
+	border-top: solid 4px #f36f21;
+	background: #2d675d url('graphics/footer-bg-1x25.gif') repeat-x top; 
+}
+
+#header .container, #navfooter .container {
+	position: relative;
+}
+
+#footer {
+	margin-top: 3px;
+	border-top: solid 1px #f36f21;
+	clear: both;
+}
+
+/*-----------------------------------*/
+/*--------->>> SLIDESHOW <<<---------*/
+/*-----------------------------------*/
+
+
+.no-js ul#slideshow li:first-child + li {
+	position: relative;
+	opacity: 1;
+}
+
+
+#slideshow {
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-bottom: 1em;
+	margin-top: 0;
+	list-style:none;
+	padding-left: 0;
+}
+
+#slideshow li {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	padding-left: 0;
+}
+
+.slideshowimage {
+    z-index: 1;
+    opacity: 0;
+    -ms-transition: opacity 1.5s ease-in;
+    -moz-transition: opacity 1.5s ease-in;
+    -webkit-transition: opacity 1.5s ease-in;
+    -o-transition: opacity 1.5s ease-in;
+    transition: opacity 1.5s ease-in;
+}
+
+li.active {
+    opacity: 0;
+    -ms-transition: opacity 1.5s ease-out;
+    -moz-transition: opacity 1.5s ease-out;
+    -webkit-transition: opacity 1.5s ease-out;
+    -o-transition: opacity 1.5s ease-out;
+    transition: opacity 1.5s ease-out;
+}
+
+#slideshow li.next {
+ 	position: static;
+    z-index: 10;
+    opacity: 1;
+    -ms-transition: opacity 1.5s ease-out;
+    -moz-transition: opacity 1.5s ease-out;
+    -webkit-transition: opacity 1.5s ease-out;
+    -o-transition: opacity 1.5s ease-out;
+    transition: opacity 1.5s ease-out;
+}
+
+#slideshow li.start {
+ 	position: static;
+	z-index: 10;
+    opacity: 1;
+    -ms-transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+#slideshow img {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+}
+
+#slideshow .caption {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	padding: 0.3em 0.5em;
+	width: auto;
+	z-index: 20;
+}
+
+
+#slideshow .ontint {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+li.green .caption {
+	color: #5d5600;
+}
+
+li.orange .caption {
+	color: #f36f21;
+}
+
+li.teal .caption {
+	color: #2d675d;
+}
+
+li.brown .caption {
+	color: #733510;
+}
+
+
+/*-----------------------------------*/
+/*------------>>> NAV <<<------------*/
+/*-----------------------------------*/
+
+
+
+
+/*togglemenu*/
+
+#togglemenuicon {
+	height: 25px;
+	width: 24px;
+	background: url("graphics/menuicon-28x25.png") no-repeat scroll 0 0 transparent;
+	position: absolute;
+	z-index: 10;
+	right: 0.8em;
+	top: 0.8em;
+	border-bottom: none;
+}
+
+#header div.closed ul.nav {
+	display: none;
+}
+
+div.closed.container, div.open.container  { /* takes up space of top nav when it's taken away */
+	margin-bottom: 33px;
+}
+
+
+/* top nav when togglemenu is open */
+
+#header .nav {
+	position: absolute;
+	width: 50%;
+	/* 	left: 1em; to make full width instead of width 100% */
+	right: 1em;
+	top: 2.85em;
+	padding: 0.5em 1em;
+	z-index: 30;
+	float: right;
+	display: block;
+	list-style: none;
+	background-color: #fff;
+	opacity: 0.98;
+	filter: alpha(opacity=98);
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#header .nav li {
+	position: relative;
+	display: block;
+	padding: 3px 3px 4px 3px; /* was 0 3px 1px 3px; */
+	font-weight: bold;
+}
+
+#header .nav ul, #header .open ul {
+	line-height: 2;
+}
+
+#header .nav a { 
+	text-decoration: none;
+}
+
+#header .nav a:hover, #header .nav a:active, #header .nav a.current {
+	color: #449999;
+}
+
+#header #togglemenutriangle {
+	position: absolute;
+	top: -1.47em;
+	right: -14px;
+	width: 1.8em;
+	height: 1em;
+	z-index: 20;
+}
+
+#header #noncanvastoggleimg {
+	position: absolute;
+	top: -1.47em;
+	right: -14px;
+	width: 30px;
+	height: 13px;
+	z-index: 20;
+	background-image: url("graphics/menuarrow30x13.png");
+}
+
+#dropdownmenutriangle, 
+#navfooter #togglemenutriangle {
+	display: none;
+}
+
+/* at narrow measure top nav should disappear with no js, toggle menu icon visible & links straight to footer
+nb need to override this in sub-IE8 because no breakpoints */
+.no-js #header .nav {
+	display: none;
+}
+
+
+
+#navfooter ul:after, .clearfix:after {  /* not sure i need this for #header li:after, any more */
+   content: " "; /* Older browsers do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+#navfooter .nav {
+	width: 100%; /*70% later*/
+	margin-top: 0.6923em;
+	list-style: none;
+}
+
+#navfooter .nav ul {
+	margin-top: 0;
+	font-size: 1em;
+	width: 100%;
+}
+
+#navfooter li {
+	position: relative;
+	float: left;
+	line-height: 2;
+	padding-right: 2em;
+	color: #fff;
+	font-weight: bold;
+	clear: both;
+}
+
+#navfooter li li {
+	font-weight: normal;
+	display: inline-block;
+}
+
+
+
+/*-----------------------------------*/
+/*--->>>INCREASING BREAKPOINTS <<<---*/
+/*-----------------------------------*/
+
+
+
+
+
+/* ------>>> MORE THAN 30em <<<------ */
+
+@media only screen and (min-width: 30em) /*, only screen and (min-device-width: 30em)*/ {
+
+
+h1 {
+    font-size: 2em;
+}
+
+#logo {
+	position: relative;
+	border-bottom-width: 2px;
+}
+
+#logo img {
+	width: auto;
+	height: auto;
+	bottom: -2px;
+}
+
+#logo .container {
+	height: 85px;
+	position: relative;
+}
+
+#slideshow .caption {
+	font-size: 1.5em;
+}
+
+#footer {
+	border-top-width: 2px;
+}
+
+} /*end of media query min-width 30em */
+
+
+
+
+/* ------>>> MORE THAN 32.5em <<<------
+for h1/logo conflict */
+
+@media only screen and (min-width: 32.5em) /*, only screen and (min-device-width: 32.5em)*/ {
+
+
+h1 {
+    position: relative;
+    top: 70%;
+}
+
+#header {
+	margin-top: 0;
+}
+
+
+#navfooter img {
+	width: auto;
+}
+
+
+
+} /*end of media query min-width 32.5em */
+
+
+
+
+/* ------>>> MORE THAN 36em <<<------
+hidden menu reverts to full menu, togglemenuicon disappears, 
+social media icons move to the right */
+
+@media only screen and (min-width: 36em) /*, only screen and (min-device-width: 36em)*/ {
+
+
+#header .social {
+    right: 0.8em;
+}
+
+#togglemenuicon {
+	display: none;
+}
+
+/*need to override .no-js #header .nav {display: none;} */
+
+div#header .container ul.nav {
+	display: block;
+	float: left;
+	position: absolute; 
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 1em 0 1em 0;
+	background-color: transparent;
+	top: auto;
+	left: 1em;
+	z-index: 0;
+	border-width: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+#header .nav > li > a { 
+	display: inline;
+	height: 2.8em;
+	padding-bottom: 1.5em;
+}
+
+div#header ul.nav > li {
+	position: relative;
+	float: left;
+	width: 19.3%;
+	padding: 0;
+	clear: none;
+}
+
+/* second level dropdown menu */
+
+
+div#header ul.nav li ul, 
+div#header ul.nav span {
+	display: none;
+}
+
+div#header ul.nav ul:hover,
+div#header ul.nav a:hover + ul, 
+div#header ul.nav a:hover + ul span, 
+div#header ul.nav ul:hover span {
+	display: block;
+}
+
+div#header ul.nav ul {
+	position: absolute;
+	top: 3em;
+	float: left;
+	padding: 0.5em 1em;
+	width: 150%;
+	background-color: #fff;
+	opacity: 0.98;
+	filter: alpha(opacity=98);
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 6px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#header #dropdownmenutriangle {
+	display: block;
+    position: absolute;
+    top: -1.75em;
+    width: 2.6em;
+    height: 1.3em;
+	z-index: 20;
+}
+
+#header #noncanvasdropdownimg {
+	display: block;
+	position: absolute;
+	top: -1.7em;
+	width: 30px;
+	height: 13px;
+	z-index: 20;
+	background-image: url("graphics/menuarrow30x13.png");
+}
+
+
+
+div#header .container ul.nav a:hover, div#header .container ul.nav a:active, div#header .container ul.nav .current {
+	color: #449999;
+}
+
+
+
+} /*end of media query min-width 36em */
+
+
+
+
+
+
+
+
+/* ------>>> MORE THAN 44em <<<------
+contentblocks in 2 columns*/
+
+@media only screen and (min-width: 44em) /*, only screen and (min-device-width: 44em)*/ {
+
+
+h1 {
+    position: relative;
+    top: 70%;
+}
+
+
+h2 {
+	margin: 0 2%;
+}
+
+.textcontent {
+	padding: 0.5em 0;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.textcontent .contentblock {
+	float: left;
+	width: 45%;
+	margin: 1em 2% 0 2%;
+}
+
+p.mainpara {  
+  /* width: 95.5%; not sure why this was needed? */
+	max-width: 800px;
+	font-size: 1em;
+	margin: 1em 2% 0 2%;
+}
+
+.cleartwocol {  
+	clear: both;
+}
+
+ 
+#navfooter .nav  {
+	width: 70%;
+}
+
+#navfooter li {
+	clear: none;
+}
+
+/* TEMP for when the footer menu isn't complete*/
+#navfooter li.tempclear {
+    clear: both;
+}
+
+#navfooter img {
+	top: auto;
+}
+
+
+
+} /*end of media query min-width 44em */
+
+
+
+/* ------>>> MORE THAN 55em <<<------ 
+maincontent contentblocks in 4 columns, menu text larger*/
+
+@media only screen and (min-width: 55em) /*, only screen and (min-device-width: 55em)*/ {
+
+
+h1 {
+    font-size: 3em;
+    top: 55%;
+}
+
+.mainpage .textcontent .contentblock {
+	width: 22.5%;
+	margin-left: 0;
+}
+
+.mainpage .textcontent p:first-child, .mainpage .textcontent .contentblock:nth-child(1) { 
+	margin-left: 2%;
+}
+
+div.textcontent div:nth-child(3) {  
+  clear: none;
+}
+
+#header .nav li {
+	font-size: 1.2em;
+}
+
+div#header .container ul.nav ul {
+	top: 2.5em;
+}
+
+
+#header #dropdownmenutriangle {
+	height: 1em;
+	top: -1.4em;
+}
+
+#header #noncanvasdropdownimg {
+	top: -1.25em;
+}
+
+
+} /*end of media query min-width 55em */
+
+
